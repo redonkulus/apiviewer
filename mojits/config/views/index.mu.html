@@ -1,0 +1,57 @@
+                
+                <div id="{{mojit_view_id}}" class="mod mod2 api-config">
+                
+                    <form action="/" method="get" name="cfg">
+                        <div class="wrap">
+                            <div id="api-properties" class="fieldset api-properties">
+                                <h3>Properties</h3>
+                                <ol>
+                                    <li>
+                                        <label class="hide">Properties:</label>
+                                        <select name="properties" size="9">
+                                            <option value="" selected="selected">Select a property</option>
+                                            {{#properties}}
+                                            <option value="{{config}}">{{name}}</option>
+                                            {{/properties}}
+                                        </select>
+                                    </li>
+                                </ol>
+                            </div>
+                        
+                            <div id="api-servers" class="fieldset api-servers hide">
+                                <h3>Servers</h3>
+                                <ol></ol>
+                            </div>
+                            
+                            <div id="api-apis" class="fieldset api-apis-fixed hide">
+                                <h3>APIs</h3>
+                                <ol class="overflow api-apis list2"></ol>
+                            </div>
+                            
+                            <div id="api-path" class="fieldset api-path hide">
+                                <h3>Path</h3>
+                                <ol class="overflow list"></ol>
+                            </div>
+                            
+                            <div id="api-params" class="fieldset overflow hide">
+                                <div id="api-query" class="api-query hide">    
+                                    <h3>Query Parameters</h3>
+                                    <ol class="list"></ol>
+                                </div>
+                                
+                                <div id="api-headers" class="api-headers hide">    
+                                    <h3>Headers</h3>
+                                    <ol class="list"></ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="api-buttons" class="hide">
+                            <h3 class="hide">Submit the form</h3>
+                            
+                            <button type="submit">view</button>
+                            <button type="reset">reset</button>                            
+                        </div>
+                    </form>
+        
+                </div>

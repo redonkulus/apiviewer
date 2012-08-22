@@ -1,0 +1,22 @@
+{
+    "name": "apiviewer",
+    "description": "API Viewer for WADL generated documents.",
+    "version": "0.0.1",
+    "contributors": 
+    [
+        {
+            "name": "Seth Bertalotto",
+            "email": "seth@bertalotto.net"
+        }
+    ], 
+    "dependencies": {
+        "mojito": ">= 0.3.30",
+        "xml2json": ">= 0.2.4"
+    },
+    "engines": {
+        "node": ">= 0.6"
+    },
+    "scripts": {
+        "start": "mojito start"
+    }
+}

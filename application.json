@@ -1,0 +1,40 @@
+[
+    {
+        "settings": [ "master" ],
+        "specs": {
+            "frame" : {
+                "type" : "HTMLFrameMojit",
+                "config" : {
+                    "deploy" : true,
+                    "title" : "Yahoo! API Viewer",
+                    "child" : {
+                        "type" : "page"
+                    },
+                    "assets" : {
+                        "top" : {
+                            "css" : [
+                                "/static/apiviewer/assets/css/viewer.css"
+                            ]
+                        },
+                        "bottom" : {
+                            "js" : [
+                                "http://yui.yahooapis.com/combo?2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js&2.8.2r1/build/connection/connection-min.js&2.8.2r1/build/json/json-min.js&2.8.2r1/build/selector/selector-min.js",
+                                "https://a.analytics.yahoo.com/ywa.js",
+                                "/static/apiviewer/assets/js/viewer.js"
+                            ]
+                        }
+                    }
+                }
+            },
+            "data" : {
+                "type" : "data"
+            },
+            "parse" : {
+                "type" : "parse"
+            }
+        },
+        "staticHandling" : {
+            "appName" : "apiviewer"
+        }
+    }
+]

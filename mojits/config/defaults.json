@@ -1,0 +1,17 @@
+[
+    {
+        "settings": [ "master" ],
+        "config": {
+            "properties": [
+                {
+                    "name": "Media Java API",
+                    "config": "http://japi1.qa1.global.media.yahoo.com:4080/media_common_api/v1/apidoc/config?format=xml"
+                },
+                {
+                    "name": "Media PHP API",
+                    "config": "http://ci.media.corp.yahoo.com/api_viewer/global_api.xml"
+                }
+            ]
+        }
+    }
+]

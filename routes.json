@@ -1,0 +1,20 @@
+[
+    {
+        "settings": [ "master" ],
+        "_root": { 
+            "verbs": ["get"],
+            "path": "/",
+            "call": "frame.index"
+        },
+        "_data": { 
+            "verbs": ["get"],
+            "path": "/data",
+            "call": "data.index"
+        },
+        "_parse": { 
+            "verbs": ["get"],
+            "path": "/parse",
+            "call": "parse.index"
+        }
+    }
+]

@@ -1,0 +1,39 @@
+        
+        <div id="page">
+    
+            {{{header}}}
+            
+            <section id="bd" role="main">
+            
+                {{{message}}}
+                
+                {{{config}}}
+                
+                {{{viewer}}}
+            
+                {{{history}}}
+                
+            </section>
+    
+            <footer id="ft" class="mod mod-last" role="contentinfo">
+                <cite>
+                    Copyright &copy; 2012 Yahoo! Inc. For internal use only.
+                    <a href="http://twiki.corp.yahoo.com/view/Media/APIViewer">API Viewer Doc</a> by
+                    <a href="http://backyard.yahoo.com/tools/g/employee/profile?user_id=sbertal">Seth Bertalotto</a> - 
+                    <a href="http://twiki.corp.yahoo.com/view/Media/MediaIntegrationTeam">Media Foundation Team</a>.
+                    If you like it, please consider giving him a <a href="https://backyard.yahoo.com/tools/o/bravo/give.php?to=sbertal">Backyard Bravo</a>.
+                </cite>
+            </footer>
+        
+        </div>
+
+        <script>
+        // init api viewer
+        YAHOO.APIViewer.init();
+
+        // init YWA
+        var YWATracker = YWA.getTracker("<?php echo $ycb->getValue('media.api_viewer.ywa', YCB_EXACT_MATCH) ?>");
+        /*YWATracker.setDocumentName("");*/
+        /*YWATracker.setDocumentGroup("");*/
+        YWATracker.submit();
+        </script>
